@@ -1,7 +1,6 @@
 from django.db.models import Q
 from django.template.response import TemplateResponse
-from django.conf.settings import YANDEX_AD_MANAGER__ALLOWED_VIEWS, YANDEX_AD_MANAGER__ALLOWED_TEMPLATES
-
+from django.conf import settings
 
 from .models import YandexCurrentAdBlockConfiguration
 
@@ -10,8 +9,8 @@ class AdManagerMiddleware:
     def __init__(self, get_response):
         self.get_response = get_response
         self.is_connected = False
-        self.allowed_views = YANDEX_AD_MANAGER__ALLOWED_VIEWS
-        self.allowed_templates = YANDEX_AD_MANAGER__ALLOWED_TEMPLATES
+        self.allowed_views = settings.YANDEX_AD_MANAGER__ALLOWED_VIEWS
+        self.allowed_templates = settings.YANDEX_AD_MANAGER__ALLOWED_TEMPLATES
 
     def __call__(self, request):
         response = self.get_response(request)

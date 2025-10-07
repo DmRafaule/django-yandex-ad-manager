@@ -26,7 +26,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('adlocation_name', models.CharField(max_length=100, unique=True)),
-                ('adblock', models.ForeignKey(on_delete=django.db.models.deletion.DO_NOTHING, to='YandexAdManager.yandexadblock')),
+                ('adblock', models.ForeignKey(on_delete=django.db.models.deletion.DO_NOTHING, to='django_yandex_ad_manager.yandexadblock')),
             ],
         ),
         migrations.CreateModel(
@@ -35,14 +35,14 @@ class Migration(migrations.Migration):
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('brand_name', models.CharField(max_length=100, null=True, unique=True)),
                 ('adnetwork_step_by', models.IntegerField(default=3, help_text='To display an YandexAdBlock every N iteration')),
-                ('adnetwork_locations', models.ManyToManyField(to='YandexAdManager.yandexadlocation')),
+                ('adnetwork_locations', models.ManyToManyField(to='django_yandex_ad_manager.yandexadlocation')),
             ],
         ),
         migrations.CreateModel(
             name='YandexCurrentAdBlockConfiguration',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('current', models.OneToOneField(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='current_ad_network', to='YandexAdManager.yandexadblockconfiguration')),
+                ('current', models.OneToOneField(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='current_ad_network', to='django_yandex_ad_manager.yandexadblockconfiguration')),
             ],
         ),
     ]

@@ -31,7 +31,7 @@ pip install django-yandex-ad-manager
 ```python
 INSTALLED_APPS = [
     # ...
-    'django_yandex_ad_manager',
+    'django_yandex_ad_manager.apps.YandexadmanagerConfig',
     # ...
 ]
 ```

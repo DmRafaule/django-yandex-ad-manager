@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('YandexAdManager', '0003_yandexadblock_adblock_placeholder_action_and_more'),
+        ('django_yandex_ad_manager', '0003_yandexadblock_adblock_placeholder_action_and_more'),
     ]
 
     operations = [

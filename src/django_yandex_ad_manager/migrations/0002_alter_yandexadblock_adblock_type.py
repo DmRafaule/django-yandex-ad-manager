@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('YandexAdManager', '0001_initial'),
+        ('django_yandex_ad_manager', '0001_initial'),
     ]
 
     operations = [
