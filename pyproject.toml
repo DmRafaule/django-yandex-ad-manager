@@ -37,4 +37,4 @@ keywords = ["django", "django app", "advertisement network", "yandex", "ads", "t
 [project.urls]
 "Complete guide RU" = "https://timthewebmaster.com/ru/tools/django-yadnex-ad-manager/"
 "Complete guide EN" = "https://timthewebmaster.com/en/tools/django-yandex-ad-manager/"
-"Repository" = "https://github.com/DmRafaule/DjangoYandexAdManager.git"
+"Repository" = "https://github.com/DmRafaule/django-yandex-ad-manager"
