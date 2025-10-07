@@ -1,6 +1,7 @@
 # Django Yandex Ad Manager
 
 A comprehensive Django application for managing and displaying Yandex advertising blocks with advanced configuration options.
+See the comprehensive guide on https://timthewebmaster.com/en/tools/django-yandex-ad-manager/
 
 ## Features
 
