@@ -46,6 +46,14 @@ MIDDLEWARE = [
 ]
 ```
 
+### 4. Set up allowed views and templates, to render into
+```python
+# Yandex ad manager
+# For example, you should paste your view's names and templates
+YANDEX_AD_MANAGER__ALLOWED_VIEWS = ('home', 'article', 'tool', 'tool_main')
+YANDEX_AD_MANAGER__ALLOWED_TEMPLATES = ('PagiScroll/base_post_list.html', 'Post/basic--post_preview-article.html', 'Post/basic--post_preview-note.html', 'Post/basic--post_preview-tool.html' )
+```
+
 ### 3. Run Migrations
 
 ```bash
