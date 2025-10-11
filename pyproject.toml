@@ -3,7 +3,7 @@ requires = ["hatchling >= 1.26"]
 build-backend = "hatchling.build"
 [project]
 name = "django-yandex-ad-manager"
-version = "0.0.7"
+version = "0.0.8"
 authors = [
   { name="Tim The Webmaster", email="timachuduk@gmail.com" },
 ]
